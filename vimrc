@@ -138,6 +138,11 @@ nnoremap <silent><special> <leader>7 :7b<CR>
 nnoremap <silent><special> <leader>8 :8b<CR>
 nnoremap <silent><special> <leader>9 :9b<CR>
 
+"CtrlP
+""""""
+"Open Buffer
+nnoremap <special> <c-b> :CtrlPBuffer<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 "Plugins Settings
