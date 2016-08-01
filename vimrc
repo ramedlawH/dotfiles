@@ -111,7 +111,7 @@ set statusline+=\ %P " percent through file
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Use ',' as <leader>
-let mapleader ="\,"
+let mapleader ="\<Space>"
 
 " show/hide filetree with <F6>
 nnoremap <special> <F6> :NERDTreeToggle<CR>
