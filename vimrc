@@ -141,7 +141,7 @@ nnoremap <silent><special> <leader>9 :9b<CR>
 "CtrlP
 """"""
 "Open Buffer
-nnoremap <special> <c-b> :CtrlPBuffer<CR>
+nnoremap <special> <leader>b :CtrlPBuffer<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
