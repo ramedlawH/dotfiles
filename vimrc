@@ -110,7 +110,7 @@ set statusline+=\ %P " percent through file
 " 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"Use ',' as <leader>
+"Use 'Space' as <leader>
 let mapleader ="\<Space>"
 
 " show/hide filetree with <F6>
