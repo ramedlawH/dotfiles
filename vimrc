@@ -20,10 +20,11 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 colorscheme peachpuff
 set nu
-set ls=2
-set ts=2
-set et
-set sw=2
+set laststatus=2
+set tabstop=2
+set expandtab
+set smarttab
+set softtabstop=2
 set shiftwidth=2
 set autoindent
 set hlsearch
@@ -31,6 +32,7 @@ set showtabline=1
 set showcmd
 set ruler
 set confirm
+set nowrap
 "Dark blue line at the right site 
 set colorcolumn=81
 highlight ColorColumn ctermbg=darkblue
