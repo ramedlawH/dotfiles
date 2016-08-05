@@ -19,6 +19,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } 
 call plug#end()
 colorscheme peachpuff
+set encoding=utf8
 set nu
 set laststatus=2
 set tabstop=2
