@@ -52,6 +52,12 @@ set statusline+=%= " left/right seperator
 set statusline+=%c, " cursor column
 set statusline+=%#error#%l%*/%L "cursor line/total lines
 set statusline+=\ %P " percent through file
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Spell Checking
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType markdown setlocal spell
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """Key Bindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -171,3 +177,5 @@ set wildignore+=*.swp,*.zip,*.bak,*.backup "files
 " Tagbar
 """""""""
 " let g:tagbar_autoclose = 1
+
+
