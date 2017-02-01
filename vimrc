@@ -20,8 +20,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 " cool commenting features
 Plug 'scrooloose/nerdcommenter'
-" Filetree inside vim 
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } 
+" Filetree inside vim
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
 colorscheme peachpuff
 set encoding=utf8
@@ -39,7 +39,7 @@ set showcmd
 set ruler
 set confirm
 set nowrap
-"Dark blue line at the right site 
+"Dark blue line at the right site
 set colorcolumn=81
 highlight ColorColumn ctermbg=darkblue
 """Statusline settings
@@ -121,11 +121,15 @@ autocmd FileType markdown setlocal spell
 "   <End>          End
 "   <PageUp>       page-up
 "   <PageDown>     page-down
-" 
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Use 'Space' as <leader>
 let mapleader ="\<Space>"
+
+"remove trailing whitespaces
+:nnoremap <silent><F4> :%s/\s\+$//e<CR>
+
 
 " show/hide filetree with <F6>
 nnoremap <special> <F6> :NERDTreeToggle<CR>
