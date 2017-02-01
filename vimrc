@@ -7,6 +7,11 @@ filetype off
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
+"Vim airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+"Vim fugitive for git features inside vim
+Plug 'tpope/vim-fugitive'
 "a tagbar INFO: need install ctags
 Plug 'majutsushi/tagbar'
 "Fuzzy filesearch
@@ -178,4 +183,11 @@ set wildignore+=*.swp,*.zip,*.bak,*.backup "files
 """""""""
 " let g:tagbar_autoclose = 1
 
+"Vim Airline
+""""""""""""
+"Show all buffers in Tabs
+let g:airline#extensions#tabline#enabled = 1
 
+"Vim Airline Themes
+"""""""""""""""""""
+let g:airline_theme='solarized'
