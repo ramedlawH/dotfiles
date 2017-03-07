@@ -145,7 +145,7 @@ vmap <silent> <C-c> :call NERDComment(1, "toggle")<CR>
 "buffer switching"
 nnoremap <silent><special> <leader>e :bnext<CR>
 nnoremap <silent><special> <leader>q :bprevious<CR>
-nnoremap <silent><special> <leader>w :buffers<CR>
+"nnoremap <silent><special> <leader>w :buffers<CR>
 nnoremap <silent><special> <leader>1 :1b<CR>
 nnoremap <silent><special> <leader>2 :2b<CR>
 nnoremap <silent><special> <leader>3 :3b<CR>
@@ -159,7 +159,7 @@ nnoremap <silent><special> <leader>9 :9b<CR>
 "CtrlP
 """"""
 "Open Buffer
-nnoremap <special> <leader>b :CtrlPBuffer<CR>
+nnoremap <special> <leader>w :CtrlPBuffer<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
