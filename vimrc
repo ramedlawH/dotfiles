@@ -23,7 +23,6 @@ Plug 'scrooloose/nerdcommenter'
 " Filetree inside vim
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 call plug#end()
-colorscheme peachpuff
 set encoding=utf8
 set nu
 set laststatus=2
@@ -40,7 +39,7 @@ set ruler
 set confirm
 set nowrap
 "Dark blue line at the right site
-set colorcolumn=81
+"set colorcolumn=81
 highlight ColorColumn ctermbg=darkblue
 """Statusline settings
 set statusline=
@@ -156,10 +155,36 @@ nnoremap <silent><special> <leader>7 :7b<CR>
 nnoremap <silent><special> <leader>8 :8b<CR>
 nnoremap <silent><special> <leader>9 :9b<CR>
 
+
 "CtrlP
 """"""
 "Open Buffer
 nnoremap <special> <leader>w :CtrlPBuffer<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Solarized color scheme
+" 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable
+set background=light
+set t_Co=256
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+let g:solarized_italic = 1
+let g:solarized_bold = 1
+let g:solarized_underlined = 1
+let g:solarized_contrast = 'high'
+"colorscheme solarized
+colorscheme peachpuff
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Set CursorLine
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set cursorline
+highlight CursorLine cterm=NONE ctermbg=187 guibg=Grey100
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
