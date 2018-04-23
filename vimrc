@@ -26,7 +26,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'fatih/vim-go'
 call plug#end()
 set encoding=utf8
-set nu
+set number
+set relativenumber
 set laststatus=2
 set tabstop=2
 set expandtab
@@ -58,6 +59,7 @@ set statusline+=%= " left/right seperator
 set statusline+=%c, " cursor column
 set statusline+=%#error#%l%*/%L "cursor line/total lines
 set statusline+=\ %P " percent through file
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Spell Checking
