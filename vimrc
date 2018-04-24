@@ -27,7 +27,6 @@ Plug 'fatih/vim-go'
 call plug#end()
 set encoding=utf8
 set number
-set relativenumber
 set laststatus=2
 set tabstop=2
 set expandtab
