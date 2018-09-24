@@ -24,9 +24,17 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " Go Support
 Plug 'fatih/vim-go'
+" Vim easy-motion
+Plug 'easymotion/vim-easymotion'
 call plug#end()
+
 set encoding=utf8
 set number
+"Set relative number 
+"autocmd InsertEnter * :set norelativenumber
+"autocmd InsertLeave * :set relativenumber
+"set relativenumber
+
 set laststatus=2
 set tabstop=2
 set expandtab
@@ -225,3 +233,24 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 "Vim Airline Themes
 """""""""""""""""""
 let g:airline_theme='solarized'
+
+"Vim easymotion
+"""""""""""""""
+
+"Disable default easymotion bindings
+"let g:EasyMotion_do_mapping = 0
+"
+"Jump to anywhere you want with minimal keystrokes, with just one key binding
+" `s{char}{label}`
+"nmap s <Plug>(easymotion-overwin-f)
+
+" or  `s{char}{char}{label}`
+"nmap s <Plug>(easymotion-overwin-f2)
+
+"Turn on case insensitive feature
+"let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
