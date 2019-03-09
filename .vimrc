@@ -49,7 +49,7 @@ set ruler
 set confirm
 set nowrap
 "Dark blue line at the right site
-"set colorcolumn=81
+set colorcolumn=81
 highlight ColorColumn ctermbg=darkblue
 """Statusline settings
 set statusline=
