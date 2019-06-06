@@ -48,6 +48,7 @@ set showcmd
 set ruler
 set confirm
 set nowrap
+set nomodeline
 "Dark blue line at the right site
 set colorcolumn=81
 highlight ColorColumn ctermbg=darkblue
