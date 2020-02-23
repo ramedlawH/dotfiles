@@ -7,11 +7,19 @@ filetype off
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
+
+"Autocompletion for nvim
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+endif
+
 "Vim airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "Vim fugitive for git features inside vim
 Plug 'tpope/vim-fugitive'
+" Change or remove surrounds
+Plug 'tpope/vim-surround'
 "a tagbar INFO: need install ctags
 Plug 'majutsushi/tagbar'
 "Fuzzy filesearch
@@ -23,7 +31,7 @@ Plug 'scrooloose/nerdcommenter'
 " Filetree inside vim
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " Go Support
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'for': 'go' }
 " Vim easy-motion
 Plug 'easymotion/vim-easymotion'
 call plug#end()
@@ -72,7 +80,7 @@ set statusline+=\ %P " percent through file
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Spell Checking
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType markdown setlocal spell
+"autocmd FileType markdown setlocal spell
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """Key Bindings
@@ -234,6 +242,10 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 "Vim Airline Themes
 """""""""""""""""""
 let g:airline_theme='solarized'
+
+"Autocompletion for NVIM (deoplete)
+"""""""""""""""""""""""""""""""""""
+let g:deoplete#enable_at_startup = 1
 
 "Vim easymotion
 """""""""""""""
