@@ -1,5 +1,4 @@
 set nocompatible
-syntax off
 filetype off
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -36,6 +35,7 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'easymotion/vim-easymotion'
 call plug#end()
 
+syntax enable
 set encoding=utf8
 set number
 "Set relative number 
@@ -186,8 +186,7 @@ nnoremap <special> <leader>w :CtrlPBuffer<CR>
 " Solarized color scheme
 " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax enable
-set background=light
+set background=dark
 set t_Co=256
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
@@ -196,7 +195,10 @@ let g:solarized_bold = 1
 let g:solarized_underlined = 1
 let g:solarized_contrast = 'high'
 "colorscheme solarized
-colorscheme peachpuff
+"colorscheme peachpuff
+colorscheme torte
+" Fix for vim-gitgutter to adjust SignColumn to solarized color scheme
+highlight! link SignColumn LineNr
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -204,7 +206,7 @@ colorscheme peachpuff
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set cursorline
-highlight CursorLine cterm=NONE ctermbg=187 guibg=Grey100
+"highlight CursorLine cterm=NONE ctermbg=187 guibg=Grey100
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -258,7 +260,7 @@ let g:deoplete#enable_at_startup = 1
 "nmap s <Plug>(easymotion-overwin-f)
 
 " or  `s{char}{char}{label}`
-"nmap s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-overwin-f2)
 
 "Turn on case insensitive feature
 "let g:EasyMotion_smartcase = 1
