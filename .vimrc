@@ -156,8 +156,8 @@ nnoremap <special> <F6> :NERDTreeToggle<CR>
 nnoremap <special> <F8> :TagbarToggle<CR>
 
 " comment/uncomment with <C-c> in normal and visual mode
-nmap <silent> <C-c> :call NERDComment(0, "toggle")<CR>
-vmap <silent> <C-c> :call NERDComment(1, "toggle")<CR>
+nmap <silent> <C-c> :call nerdcommenter#Comment(0, "toggle")<CR>
+vmap <silent> <C-c> :call nerdcommenter#Comment(1, "toggle")<CR>
 
 
 
