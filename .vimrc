@@ -20,15 +20,15 @@ Plug 'tpope/vim-fugitive'
 " Change or remove surrounds
 Plug 'tpope/vim-surround'
 "a tagbar INFO: need install ctags
-Plug 'majutsushi/tagbar'
+Plug 'preservim/tagbar'
 "Fuzzy filesearch
 Plug 'ctrlpvim/ctrlp.vim'
 "show git-diff in the sign column
 Plug 'airblade/vim-gitgutter'
 " cool commenting features
-Plug 'scrooloose/nerdcommenter'
+Plug 'preservim/nerdcommenter'
 " Filetree inside vim
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 " Go Support
 Plug 'fatih/vim-go', { 'for': 'go' }
 " Vim easy-motion
