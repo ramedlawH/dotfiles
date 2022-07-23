@@ -7,11 +7,6 @@ filetype off
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
 
-"Autocompletion for nvim
-"if has('nvim')
-  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"endif
-
 "Neovim LSP Config
 Plug 'neovim/nvim-lspconfig'
 
@@ -83,26 +78,10 @@ set ruler
 set confirm
 set nowrap
 set nomodeline
+
 "Dark blue line at the right site
 set colorcolumn=81
-highlight ColorColumn ctermbg=darkblue
-
-"""Statusline settings
-"set statusline=
-"set statusline+=%{expand('%')} "relative path of file
-"set statusline+=\ [
-"set statusline+=%{strlen(&fenc)?&fenc:'none'}, "file encoding
-"set statusline+=%{&ff} "file format
-"set statusline+=]
-"set statusline+=%y "file type
-"set statusline+=%h  "help file flag
-"set statusline+=%#error#%m%* " modified flag
-"set statusline+=%r  " read-only flag
-"set statusline+=%= " left/right seperator
-"set statusline+=%c, " cursor column
-"set statusline+=%#error#%l%*/%L "cursor line/total lines
-"set statusline+=\ %P " percent through file
-
+"highlight ColorColumn ctermbg=darkblue
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Spell Checking
@@ -186,8 +165,6 @@ nnoremap <special> <F8> :TagbarToggle<CR>
 nmap <silent> <C-c> :call nerdcommenter#Comment(0, "toggle")<CR>
 vmap <silent> <C-c> :call nerdcommenter#Comment(1, "toggle")<CR>
 
-
-
 "buffer switching"
 nnoremap <silent><special> <leader>e :bnext<CR>
 nnoremap <silent><special> <leader>q :bprevious<CR>
@@ -207,26 +184,6 @@ nnoremap <silent><special> <leader>9 :9b<CR>
 """"""
 "Open Buffer
 nnoremap <special> <leader>w :CtrlPBuffer<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
-" Solarized color scheme
-" 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set background=dark
-"set t_Co=256
-"let g:solarized_termcolors=256
-"let g:solarized_termtrans=1
-"let g:solarized_italic = 1
-"let g:solarized_bold = 1
-"let g:solarized_underlined = 1
-"let g:solarized_contrast = 'high'
-"colorscheme solarized
-"colorscheme peachpuff
-"colorscheme torte
-
-" Fix for vim-gitgutter to adjust SignColumn to solarized color scheme
-"highlight! link SignColumn LineNr
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -280,10 +237,6 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 """""""""""""""""""
 let g:airline_theme='solarized'
 
-"Autocompletion for NVIM (deoplete)
-"""""""""""""""""""""""""""""""""""
-"let g:deoplete#enable_at_startup = 1
-
 "Vim easymotion
 """""""""""""""
 
@@ -303,4 +256,3 @@ nmap s <Plug>(easymotion-overwin-f2)
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
-
