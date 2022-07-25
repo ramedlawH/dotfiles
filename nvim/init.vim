@@ -235,7 +235,7 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 "Vim Airline Themes
 """""""""""""""""""
-let g:airline_theme='solarized'
+let g:airline_theme='deus'
 
 "Vim easymotion
 """""""""""""""
