@@ -30,16 +30,18 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 " Change or remove surrounds
 Plug 'tpope/vim-surround'
-"a tagbar INFO: need install ctags
+"a tagbar INFO: need install universal-ctags
 Plug 'preservim/tagbar'
-"Fuzzy filesearch
-Plug 'ctrlpvim/ctrlp.vim'
 "show git-diff in the sign column
 Plug 'airblade/vim-gitgutter'
 " cool commenting features
 Plug 'preservim/nerdcommenter'
-" Filetree inside vim
-Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+" Filetree 
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
+" Fuzzy Finder
+Plug 'nvim-lua/plenary.nvim' " Dependency for telescope
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 " Go Support
 Plug 'fatih/vim-go', { 'for': 'go' }
 " Vim easy-motion
@@ -155,9 +157,8 @@ let mapleader ="\<Space>"
 "remove trailing whitespaces
 :nnoremap <silent><F4> :%s/\s\+$//e<CR>
 
-
 " show/hide filetree with <F6>
-nnoremap <special> <F6> :NERDTreeToggle<CR>
+nnoremap <special> <F6> :NvimTreeOpen<CR>
 " show/hide tagbar with <F8>
 nnoremap <special> <F8> :TagbarToggle<CR>
 
@@ -179,11 +180,11 @@ nnoremap <silent><special> <leader>7 :7b<CR>
 nnoremap <silent><special> <leader>8 :8b<CR>
 nnoremap <silent><special> <leader>9 :9b<CR>
 
-
-"CtrlP
-""""""
-"Open Buffer
-nnoremap <special> <leader>w :CtrlPBuffer<CR>
+" Fuzzy Finder Telescope
+nnoremap <leader>f <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>g <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>w <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>h <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
