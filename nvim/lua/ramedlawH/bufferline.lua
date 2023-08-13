@@ -9,7 +9,6 @@ bufferline.setup({
   options = {
     buffer_close_icon = '',
     middle_mouse_command = "bdelete! %d",
-    diagnostics =  "nvim_lsp",
     hover = {
         enabled = true,
         delay = 200,
