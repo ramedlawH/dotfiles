@@ -39,6 +39,8 @@ Plug 'preservim/nerdcommenter'
 " Filetree 
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
+"Fancy Bufferline
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 " Fuzzy Finder
 Plug 'nvim-lua/plenary.nvim' " Dependency for telescope
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
@@ -74,7 +76,8 @@ set softtabstop=2
 set shiftwidth=2
 set autoindent
 set hlsearch
-set showtabline=1
+"Conflicts with bufferline.nvim
+"set showtabline=1 
 set showcmd
 set ruler
 set confirm
@@ -215,7 +218,8 @@ set cursorline
 """"""""""""
 "Show all buffers in Tabs
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+"turned off as it conflicts with bufferline.nvim
+let g:airline#extensions#tabline#enabled = 0 
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 "Vim Airline Themes
