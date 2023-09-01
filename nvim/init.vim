@@ -19,10 +19,10 @@ Plug 'hrsh7th/nvim-cmp'
 "Snippet Engine
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-
+"Auto pair (also for autocompletion needed)
+Plug 'windwp/nvim-autopairs'
 "Treesitter for code highlighting
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-
 "Vim airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

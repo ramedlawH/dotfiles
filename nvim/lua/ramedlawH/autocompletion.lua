@@ -1,5 +1,7 @@
- -- Setup nvim-cmp.
+-- Setup nvim-cmp.
 local cmp = require'cmp'
+-- Include nvim-autopairs: Paranthesis after selecting function or method
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 
 cmp.setup({
   snippet = {
@@ -63,6 +65,12 @@ cmp.setup.cmdline(':', {
     { name = 'cmdline' }
   })
 })
+
+-- On selecting a method or function, add paranthesis
+cmp.event:on(
+  'confirm_done',
+  cmp_autopairs.on_confirm_done()
+)
 
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
