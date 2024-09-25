@@ -76,7 +76,7 @@ cmp.event:on(
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- TS Server
-require('lspconfig')['tsserver'].setup {
+require('lspconfig')['ts_ls'].setup {
   capabilities = capabilities
 }
 -- PHP
